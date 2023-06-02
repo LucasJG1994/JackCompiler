@@ -1,0 +1,3 @@
+C:/hack_workspace/JackCompiler/CMakeFiles/jack.dir
+C:/hack_workspace/JackCompiler/CMakeFiles/ALL_BUILD.dir
+C:/hack_workspace/JackCompiler/CMakeFiles/ZERO_CHECK.dir
