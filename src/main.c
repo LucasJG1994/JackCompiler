@@ -1,6 +1,8 @@
 #include <stdio.h>
 
+#include "scanner.h"
+
 int main() {
-	printf("Hello world");
+	yy_init("./test");
 	return 0;
 }
