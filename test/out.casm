@@ -1,0 +1,3146 @@
+sp = 0
+lcl = 1
+arg = 2
+this = 3
+that = 4
+temp = 5
+static = 16
+mov sp, 256
+mov lcl, 256
+mov arg, 256
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Sys.init_0_0
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Sys.init_0
+ret_Sys.init_0_0
+stop
+jmp stop
+Main.main_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_SquareGame.new_0_1
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp SquareGame.new_0
+ret_SquareGame.new_0_1
+; POP LOCAL 0
+sub sp, sp, 1
+add r14, lcl, 0
+mov [r14], [sp]
+; PUSH LOCAL 0
+add r14, lcl, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_game.run_1_2
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp game.run_1
+ret_game.run_1_2
+; PUSH LOCAL 0
+add r14, lcl, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_game.dispose_1_3
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp game.dispose_1
+ret_game.dispose_1_3
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+sp = 0
+lcl = 1
+arg = 2
+this = 3
+that = 4
+temp = 5
+static = 16
+mov sp, 256
+mov lcl, 256
+mov arg, 256
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Sys.init_0_4
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Sys.init_0
+ret_Sys.init_0_4
+stop
+jmp stop
+Square.new_3
+; PUSH CONSTANT 3
+mov [sp], 3
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Memory.alloc_1_5
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Memory.alloc_1
+ret_Memory.alloc_1_5
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP THIS 0
+sub sp, sp, 1
+add r14, this, 0
+mov [r14], [sp]
+; PUSH ARGUMENT 1
+add r14, arg, 1
+mov [sp], [r14]
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; PUSH ARGUMENT 2
+add r14, arg, 2
+mov [sp], [r14]
+add sp, sp, 1
+; POP THIS 2
+sub sp, sp, 1
+add r14, this, 2
+mov [r14], [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_draw_0_6
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp draw_0
+ret_draw_0_6
+; PUSH POINTER 0
+mov [sp], this
+add sp, sp, 1
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.dispose_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH POINTER 0
+mov [sp], this
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Memory.deAlloc_1_7
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Memory.deAlloc_1
+ret_Memory.deAlloc_1_7
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.draw_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_8
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_8
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_9
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_9
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.erase_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_10
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_10
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_11
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_11
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.incSize_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 254
+mov [sp], 254
+add sp, sp, 1
+; LT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jlt cmp_true_0
+mov r13, 0
+jmp cmp_false_0
+cmp_true_0
+mov r13, 1
+cmp_false_0
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 510
+mov [sp], 510
+add sp, sp, 1
+; LT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jlt cmp_true_1
+mov r13, 0
+jmp cmp_false_1
+cmp_true_1
+mov r13, 1
+cmp_false_1
+mov [sp], r13
+add sp, sp, 1
+; AND
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+and r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE0
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE0
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_erase_0_12
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp erase_0
+ret_erase_0_12
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; POP THIS 2
+sub sp, sp, 1
+add r14, this, 2
+mov [r14], [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_draw_0_13
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp draw_0
+ret_draw_0_13
+; GOTO ENDIF0
+jmp ENDIF0
+ELSE0
+ENDIF0
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.decSize_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; GT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jgt cmp_true_2
+mov r13, 0
+jmp cmp_false_2
+cmp_true_2
+mov r13, 1
+cmp_false_2
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE1
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE1
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_erase_0_14
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp erase_0
+ret_erase_0_14
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; POP THIS 2
+sub sp, sp, 1
+add r14, this, 2
+mov [r14], [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_draw_0_15
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp draw_0
+ret_draw_0_15
+; GOTO ENDIF1
+jmp ENDIF1
+ELSE1
+ENDIF1
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.moveUp_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; GT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jgt cmp_true_3
+mov r13, 0
+jmp cmp_false_3
+cmp_true_3
+mov r13, 1
+cmp_false_3
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE2
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE2
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_16
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_16
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_17
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_17
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_18
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_18
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_19
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_19
+; GOTO ENDIF2
+jmp ENDIF2
+ELSE2
+ENDIF2
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.moveDown_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 254
+mov [sp], 254
+add sp, sp, 1
+; LT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jlt cmp_true_4
+mov r13, 0
+jmp cmp_false_4
+cmp_true_4
+mov r13, 1
+cmp_false_4
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE3
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE3
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_20
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_20
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_21
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_21
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_22
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_22
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_23
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_23
+; GOTO ENDIF3
+jmp ENDIF3
+ELSE3
+ENDIF3
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.moveLeft_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; GT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jgt cmp_true_5
+mov r13, 0
+jmp cmp_false_5
+cmp_true_5
+mov r13, 1
+cmp_false_5
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE4
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE4
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_24
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_24
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_25
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_25
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; POP THIS 0
+sub sp, sp, 1
+add r14, this, 0
+mov [r14], [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_26
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_26
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_27
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_27
+; GOTO ENDIF4
+jmp ENDIF4
+ELSE4
+ENDIF4
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+Square.moveRight_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 510
+mov [sp], 510
+add sp, sp, 1
+; LT
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jlt cmp_true_6
+mov r13, 0
+jmp cmp_false_6
+cmp_true_6
+mov r13, 1
+cmp_false_6
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE5
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE5
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_28
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_28
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_29
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_29
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; POP THIS 0
+sub sp, sp, 1
+add r14, this, 0
+mov [r14], [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Screen.setColor_1_30
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.setColor_1
+ret_Screen.setColor_1_30
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; SUB
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH THIS 2
+add r14, this, 2
+mov [sp], [r14]
+add sp, sp, 1
+; ADD
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+add r13, r13, r14
+mov [sp], r13
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 4
+; Save Return Address
+mov [sp], &ret_Screen.drawRectangle_4_31
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.drawRectangle_4
+ret_Screen.drawRectangle_4_31
+; GOTO ENDIF5
+jmp ENDIF5
+ELSE5
+ENDIF5
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+sp = 0
+lcl = 1
+arg = 2
+this = 3
+that = 4
+temp = 5
+static = 16
+mov sp, 256
+mov lcl, 256
+mov arg, 256
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Sys.init_0_32
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Sys.init_0
+ret_Sys.init_0_32
+stop
+jmp stop
+SquareGame.new_0
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Memory.alloc_1_33
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Memory.alloc_1
+ret_Memory.alloc_1_33
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; PUSH CONSTANT 30
+mov [sp], 30
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 3
+; Save Return Address
+mov [sp], &ret_Square.new_3_34
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Square.new_3
+ret_Square.new_3_34
+; POP THIS 0
+sub sp, sp, 1
+add r14, this, 0
+mov [r14], [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; PUSH POINTER 0
+mov [sp], this
+add sp, sp, 1
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+SquareGame.dispose_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.dispose_1_35
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.dispose_1
+ret_square.dispose_1_35
+; PUSH POINTER 0
+mov [sp], this
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Memory.deAlloc_1_36
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Memory.deAlloc_1
+ret_Memory.deAlloc_1_36
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+SquareGame.moveSquare_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_7
+mov r13, 0
+jmp cmp_false_7
+cmp_true_7
+mov r13, 1
+cmp_false_7
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE6
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE6
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.moveUp_1_37
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.moveUp_1
+ret_square.moveUp_1_37
+; GOTO ENDIF6
+jmp ENDIF6
+ELSE6
+ENDIF6
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_8
+mov r13, 0
+jmp cmp_false_8
+cmp_true_8
+mov r13, 1
+cmp_false_8
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE7
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE7
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.moveDown_1_38
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.moveDown_1
+ret_square.moveDown_1_38
+; GOTO ENDIF7
+jmp ENDIF7
+ELSE7
+ENDIF7
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 3
+mov [sp], 3
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_9
+mov r13, 0
+jmp cmp_false_9
+cmp_true_9
+mov r13, 1
+cmp_false_9
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE8
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE8
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.moveLeft_1_39
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.moveLeft_1
+ret_square.moveLeft_1_39
+; GOTO ENDIF8
+jmp ENDIF8
+ELSE8
+ENDIF8
+; PUSH THIS 1
+add r14, this, 1
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 4
+mov [sp], 4
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_10
+mov r13, 0
+jmp cmp_false_10
+cmp_true_10
+mov r13, 1
+cmp_false_10
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE9
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE9
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.moveRight_1_40
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.moveRight_1
+ret_square.moveRight_1_40
+; GOTO ENDIF9
+jmp ENDIF9
+ELSE9
+ENDIF9
+; PUSH CONSTANT 5
+mov [sp], 5
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_Sys.wait_1_41
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Sys.wait_1
+ret_Sys.wait_1_41
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+SquareGame.run_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; POP LOCAL 3
+sub sp, sp, 1
+add r14, lcl, 3
+mov [r14], [sp]
+WHILE0
+; PUSH LOCAL 3
+add r14, lcl, 3
+mov [sp], [r14]
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO WHILE_END0
+sub sp, sp, 1
+mov r13, [sp]
+jne WHILE_END0
+WHILE1
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_11
+mov r13, 0
+jmp cmp_false_11
+cmp_true_11
+mov r13, 1
+cmp_false_11
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO WHILE_END1
+sub sp, sp, 1
+mov r13, [sp]
+jne WHILE_END1
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Keyboard.keyPressed_0_42
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Keyboard.keyPressed_0
+ret_Keyboard.keyPressed_0_42
+; POP LOCAL 2
+sub sp, sp, 1
+add r14, lcl, 2
+mov [r14], [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_moveSquare_0_43
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp moveSquare_0
+ret_moveSquare_0_43
+; GOTO WHILE1
+jmp WHILE1
+WHILE_END1
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 81
+mov [sp], 81
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_12
+mov r13, 0
+jmp cmp_false_12
+cmp_true_12
+mov r13, 1
+cmp_false_12
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE10
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE10
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; POP LOCAL 3
+sub sp, sp, 1
+add r14, lcl, 3
+mov [r14], [sp]
+; GOTO ENDIF10
+jmp ENDIF10
+ELSE10
+ENDIF10
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 90
+mov [sp], 90
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_13
+mov r13, 0
+jmp cmp_false_13
+cmp_true_13
+mov r13, 1
+cmp_false_13
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE11
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE11
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.decSize_1_44
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.decSize_1
+ret_square.decSize_1_44
+; GOTO ENDIF11
+jmp ENDIF11
+ELSE11
+ENDIF11
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 88
+mov [sp], 88
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_14
+mov r13, 0
+jmp cmp_false_14
+cmp_true_14
+mov r13, 1
+cmp_false_14
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE12
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE12
+; PUSH THIS 0
+add r14, this, 0
+mov [sp], [r14]
+add sp, sp, 1
+; Get offset for ARG
+sub r13, sp, 1
+; Save Return Address
+mov [sp], &ret_square.incSize_1_45
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp square.incSize_1
+ret_square.incSize_1_45
+; GOTO ENDIF12
+jmp ENDIF12
+ELSE12
+ENDIF12
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 131
+mov [sp], 131
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_15
+mov r13, 0
+jmp cmp_false_15
+cmp_true_15
+mov r13, 1
+cmp_false_15
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE13
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE13
+; PUSH CONSTANT 1
+mov [sp], 1
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; GOTO ENDIF13
+jmp ENDIF13
+ELSE13
+ENDIF13
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 133
+mov [sp], 133
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_16
+mov r13, 0
+jmp cmp_false_16
+cmp_true_16
+mov r13, 1
+cmp_false_16
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE14
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE14
+; PUSH CONSTANT 2
+mov [sp], 2
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; GOTO ENDIF14
+jmp ENDIF14
+ELSE14
+ENDIF14
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 130
+mov [sp], 130
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_17
+mov r13, 0
+jmp cmp_false_17
+cmp_true_17
+mov r13, 1
+cmp_false_17
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE15
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE15
+; PUSH CONSTANT 3
+mov [sp], 3
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; GOTO ENDIF15
+jmp ENDIF15
+ELSE15
+ENDIF15
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 132
+mov [sp], 132
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_18
+mov r13, 0
+jmp cmp_false_18
+cmp_true_18
+mov r13, 1
+cmp_false_18
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO ELSE16
+sub sp, sp, 1
+mov r13, [sp]
+jne ELSE16
+; PUSH CONSTANT 4
+mov [sp], 4
+add sp, sp, 1
+; POP THIS 1
+sub sp, sp, 1
+add r14, this, 1
+mov [r14], [sp]
+; GOTO ENDIF16
+jmp ENDIF16
+ELSE16
+ENDIF16
+WHILE2
+; PUSH LOCAL 2
+add r14, lcl, 2
+mov [sp], [r14]
+add sp, sp, 1
+; PUSH CONSTANT 0
+mov [sp], 0
+add sp, sp, 1
+; EQ
+sub sp, sp, 1
+mov r14, [sp]
+sub sp, sp, 1
+mov r13, [sp]
+sub r13, r13, r14
+jeq cmp_true_19
+mov r13, 0
+jmp cmp_false_19
+cmp_true_19
+mov r13, 1
+cmp_false_19
+mov [sp], r13
+add sp, sp, 1
+; NOT
+sub sp, sp, 1
+mov r13, [sp]
+not r13, r13
+mov [sp], r13
+add sp, sp, 1
+; IF-GOTO WHILE_END2
+sub sp, sp, 1
+mov r13, [sp]
+jne WHILE_END2
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Keyboard.keyPressed_0_46
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Keyboard.keyPressed_0
+ret_Keyboard.keyPressed_0_46
+; POP LOCAL 2
+sub sp, sp, 1
+add r14, lcl, 2
+mov [r14], [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_moveSquare_0_47
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp moveSquare_0
+ret_moveSquare_0_47
+; GOTO WHILE2
+jmp WHILE2
+WHILE_END2
+; GOTO WHILE0
+jmp WHILE0
+WHILE_END0
+; Set up stack ptr for popping stack frame
+mov sp, lcl
+; Restore THAT
+sub sp, sp, 1
+mov that, [sp]
+; Restore THIS
+sub sp, sp, 1
+mov this, [sp]
+; Restore ARG
+sub sp, sp, 1
+mov arg, [sp]
+; Restore LCL
+sub sp, sp, 1
+mov lcl, [sp]
+; Get return address and jump
+sub sp, sp, 1
+jmp [sp]
+sp = 0
+lcl = 1
+arg = 2
+this = 3
+that = 4
+temp = 5
+static = 16
+mov sp, 256
+mov lcl, 256
+mov arg, 256
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Sys.init_0_48
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Sys.init_0
+ret_Sys.init_0_48
+stop
+jmp stop
+Sys.init_0
+; PUSH ARGUMENT 0
+add r14, arg, 0
+mov [sp], [r14]
+add sp, sp, 1
+; POP POINTER 0
+sub sp, sp, 1
+mov this, [sp]
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Math.init_0_49
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Math.init_0
+ret_Math.init_0_49
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Screen.init_0_50
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Screen.init_0
+ret_Screen.init_0_50
+; Get offset for ARG
+sub r13, sp, 0
+; Save Return Address
+mov [sp], &ret_Main.main_0_51
+add sp, sp, 1
+; Save LCL
+mov [sp], lcl
+add sp, sp, 1
+; Save ARG
+mov [sp], arg
+add sp, sp, 1
+; Save THIS
+mov [sp], this
+add sp, sp, 1
+; Save THAT
+mov [sp], that
+add sp, sp, 1
+; Set LCL
+mov lcl, sp
+; Set ARG
+mov arg, r13
+; Call function and set up return label
+jmp Main.main_0
+ret_Main.main_0_51

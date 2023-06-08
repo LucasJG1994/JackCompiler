@@ -68,32 +68,33 @@
 %token TK_GT
 
 %token TK_CLASS TK_CONSTRUCTOR TK_METHOD TK_FUNCTION
-%token TK_INT TK_BOOLEAN TK_CHAR TK_VOID
 %token TK_VAR TK_STATIC TK_FIELD
 %token TK_LET TK_DO TK_IF TK_ELSE TK_WHILE TK_RETURN
 %token TK_TRUE TK_FALSE TK_NULL
 %token TK_THIS
 
-%token TK_ID
-%token TK_NUM
+%token <info> TK_ID
+%token <info> TK_NUM
 
 %%
 
-start:
+start: {}
 	| class
 	;
 
 class:
-	| TK_CLASS TK_ID TK_LC class_block TK_RC
+	TK_CLASS TK_ID TK_LC class_block TK_RC
 	;
 
 class_block:
-	| var_dec functions
+	  var_dec
+	| functions
 	;
 
 var_dec:
-	| scope[S] type[T] TK_ID[ID] TK_SEMI
-	| var_dec scope[S] type[T] TK_ID[ID] TK_SEMI
+	  scope[S] TK_ID[T] TK_ID[ID] TK_SEMI
+	| var_dec scope[S] TK_ID[T] TK_ID[ID] TK_SEMI
+	| var_dec TK_COMMA TK_ID[ID]
 	;
 
 scope:
@@ -102,36 +103,44 @@ scope:
 	| TK_VAR
 	;
 
-type:
-	  TK_INT
-	| TK_BOOLEAN
-	| TK_CHAR
-	| TK_VOID
-	;
-
 functions:
-	| TK_CONSTRUCTOR TK_ID[ID] TK_LP arg_list TK_RP TK_LC block TK_RC
-	| func_type[F] type[T] TK_ID[ID] TK_LP arg_list TK_RP TK_LC block TK_RC
-	| functions func_type[F] type[T] TK_LP arg_list TK_RP TK_ID[ID] TK_LC block TK_RC
+	  func_type[F] TK_ID[T] TK_ID[N] TK_LP arg_dec TK_RP TK_LC block TK_RC
+	| functions func_type[F] TK_ID[T] TK_ID[N] TK_LP arg_dec TK_RP TK_LC block TK_RC
 	;
 
 func_type:
 	  TK_METHOD
 	| TK_FUNCTION
+	| TK_CONSTRUCTOR
 	;
 
-arg_list:
-	| scope type TK_ID
-	| arg_list scope type TK_ID
+arg_dec: {}
+	| TK_ID[T] TK_ID[N]
+	| arg_list TK_COMMA TK_ID[T] TK_ID[N]
 	;
 
+arg_list: {}
+	| TK_ID[N]
+	| arg_list TK_COMMA TK_ID[N]
+	;
 
-block:
+block: {}
+	| TK_DO fn_call TK_SEMI
+	| let_stmt
 	| if_stmt
 	| while_stmt
-	| assign
+	| var_dec
 	;
 	
+let_stmt:
+	  TK_LET TK_ID TK_ASSIGN bin_expr TK_SEMI
+	| TK_LET TK_ID TK_LP bin_expr TK_RP TK_ASSIGN bin_expr TK_SEMI
+	;
+
+fn_call:
+	TK_ID[C] TK_DOT TK_ID[N] TK_LP arg_list TK_RP
+	;
+
 if_stmt:
 	TK_IF TK_LP bin_expr TK_RP TK_LC block TK_RC else
 	;
@@ -142,12 +151,6 @@ else:
 
 while_stmt:
 	TK_WHILE TK_LP bin_expr TK_RP TK_LC block TK_RC
-	;
-
-assign:
-	  bin_expr
-	| factor TK_ASSIGN bin_expr
-	| factor TK_LB bin_expr TK_RB TK_ASSIGN bin_expr
 	;
 
 bin_expr:
@@ -165,6 +168,7 @@ rel_expr:
 	  expr
 	| expr TK_LT rel_expr
 	| expr TK_GT rel_expr
+	| expr TK_ASSIGN rel_expr
 	;
 
 expr:
@@ -174,18 +178,16 @@ expr:
 	;
 
 term:
-	  arr_acc
-	| arr_acc TK_MULTIPLY term
-	| arr_acc TK_DIVIDE term
-	;
-
-arr_acc:
 	  factor
-	| factor TK_LB bin_expr TK_RB
+	| factor TK_MULTIPLY term
+	| factor TK_DIVIDE term
 	;
 
 factor:
 	  TK_NUM
+	| TK_ID
+	| TK_ID TK_LB bin_expr TK_RB
+	| TK_ID TK_DOT TK_ID TK_LP arg_list TK_RP
 	| TK_TRUE
 	| TK_FALSE
 	| TK_NULL

@@ -1,0 +1,7 @@
+class Sys{
+	method void init(){
+		do Math.init();
+		do Screen.init();
+		do Main.main();
+	}
+}
